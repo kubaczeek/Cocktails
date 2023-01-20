@@ -24,6 +24,8 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -127,7 +129,11 @@ public class MainActivity extends AppCompatActivity {
                 alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(MainActivity.this, "Cocktail " + cocktail.getTitle() + " has not been removed", Toast.LENGTH_LONG).show();
+                        Snackbar.make(findViewById(R.id.main_layout),
+                                        "Cocktail " + cocktail.getTitle() + " has not been removed",
+                                        Snackbar.LENGTH_SHORT)
+                                .show();
+//                        Toast.makeText(MainActivity.this, "Cocktail " + cocktail.getTitle() + " has not been removed", Toast.LENGTH_LONG).show();
                     }
                 });
                 alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
