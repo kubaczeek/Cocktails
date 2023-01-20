@@ -66,7 +66,6 @@ public class WeatherActivity extends AppCompatActivity {
         new weatherTask().execute();
         if(CITY == ""){
             recreate();
-            recreate();
         }
         addressTxt = findViewById(R.id.address);
         updated_atTxt = findViewById(R.id.updated_at);
@@ -102,7 +101,7 @@ public class WeatherActivity extends AppCompatActivity {
                     location.getLongitude(),
                     1);
         } catch (IOException ioException) {
-            resultMessage = context.getString(R.string.service_not_abailable);
+            resultMessage = context.getString(R.string.service_not_available);
             Log.e(TAG, resultMessage, ioException);
         }
         if (addresses == null || addresses.isEmpty()) {
@@ -164,12 +163,11 @@ public class WeatherActivity extends AppCompatActivity {
         switch (requestCode) {
             case REQUEST_LOCATION_PERMISSION:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    getLocation();
                     recreate();
                 } else {
-                    Toast.makeText(this,
-                            R.string.location_permission_denied,
-                            Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(this,
+//                            R.string.location_permission_denied,
+//                            Toast.LENGTH_SHORT).show();
                 }
                 break;
         }

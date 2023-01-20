@@ -29,8 +29,9 @@
         android:autofillHints=""
         android:fontFamily="sans-serif-light"
         android:hint="@string/hint_add_content"
-        android:inputType="textAutoComplete"
-        android:textSize="18sp" />
+        android:inputType="textCapSentences|textMultiLine"
+        android:textSize="18sp"
+        />
 
     <EditText
         android:id="@+id/add_cocktail_yt_link"

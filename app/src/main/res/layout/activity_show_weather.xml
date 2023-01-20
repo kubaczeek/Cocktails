@@ -2,12 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient"
-    android:orientation="vertical"
-    android:padding="25dp"
+    android:background="@color/black"
     android:clickable="true"
     android:focusable="true"
-    android:focusableInTouchMode="true">
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="25dp">
 
     <RelativeLayout
         android:id="@+id/mainContainer"
@@ -27,6 +27,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="DHAKA, BD"
+                android:textColor="@color/white"
+
                 android:textSize="24dp" />
 
             <TextView
@@ -34,6 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20 April 2012, 20:08 PM"
+                android:textColor="@color/white"
                 android:textSize="14dp" />
         </LinearLayout>
 
@@ -50,8 +53,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Clear Sky"
-                android:textSize="18dp" />
+                android:text="@string/clear_sky"
+
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/temp"
@@ -59,7 +64,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-thin"
-                android:text="29°C"
+                android:text="@string/_29_c"
+                android:textColor="@color/white"
+
                 android:textSize="90dp" />
 
             <LinearLayout
@@ -72,7 +79,8 @@
                     android:id="@+id/temp_min"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Min Temp: 05:05 AM" />
+                    android:text="Min Temp: 05:05 AM"
+                    android:textColor="@color/white" />
 
                 <Space
                     android:layout_width="50dp"
@@ -82,7 +90,8 @@
                     android:id="@+id/temp_max"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Max Temp: 05:05 PM" />
+                    android:text="Max Temp: 05:05 PM"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
         </LinearLayout>
@@ -123,7 +132,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sunrise"
+                        android:text="@string/sunrise"
                         android:textSize="12dp" />
 
                     <TextView
@@ -160,7 +169,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sunset"
+                        android:text="@string/sunset"
                         android:textSize="12dp" />
 
                     <TextView
@@ -197,7 +206,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wind"
+                        android:text="@string/Wind"
                         android:textSize="12dp" />
 
                     <TextView
@@ -241,7 +250,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pressure"
+                        android:text="@string/pressure"
                         android:textSize="12dp" />
 
                     <TextView
@@ -278,7 +287,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Humidity"
+                        android:text="@string/humidity"
                         android:textSize="12dp" />
 
                     <TextView
