@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/downscale_text"
+        android:icon="@drawable/ic_downscale"
+        android:title="@string/downscale_text"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/upscale_text"
+        android:icon="@drawable/ic_upscale"
+        android:title="@string/upscale_text"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/edit_cocktail"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/edit_cocktail"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,49 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary_dark_green"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardBackgroundColor="@color/secondary_black"
+    card_view:cardUseCompatPadding="true"
+    android:id="@+id/cocktail_item">
+<RelativeLayout
+    style="@style/RecycleViewItemStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip"
+>
+
+    <TextView
+        android:id="@+id/cocktail_title"
+        android:layout_width="fill_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@id/cocktail_ingredients"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="Example application"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cocktail_ingredients"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="-3dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description"
+        android:textColor="@color/secondary_light_black"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

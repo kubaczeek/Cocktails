@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Cocktails</string>
+    <string name="add_cocktail">Add cocktail</string>
+    <string name="hint_add_title">Cocktail name</string>
+    <string name="hint_add_ingredients">Add ingredients</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Fields are required. Cocktail is not added.</string>
+    <string name="cocktail_title">Name:</string>
+    <string name="cocktail_receipe">Receipe:</string>
+    <string name="hint_add_content">Cocktail receipe</string>
+    <string name="hint_add_yt_link">Link to video (optional)</string>
+    <string name="edit_cocktail">Edit cocktail</string>
+    <string name="empty_edit_not_saved">Cocktail is not edited.</string>
+    <string name="search_cocktail">Search cocktail</string>
+    <string name="downscale_text">Downscale text</string>
+    <string name="upscale_text">Upscale text</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="menu_button">Przycisk menu</string>
+    <string name="sensors_count">Liczba czujników: %d</string>
+    <string name="example_sensor_name">Przykładowa nazwa czujnika</string>
+    <string name="example_sensor_value">"Przykładowa wartość czujnika "</string>
+    <string name="missing_sensor">Brak czujnika</string>
+    <string name="light_sensor_label">Czujnik światła %f</string>
+    <string name="temperature_sensor_label">Czujnik temperatury %f</string>
+    <string name="last_localization">Wciśnij przycisk aby pobrać ostatnią lokalizację</string>
+    <string name="location_permission_denied">Odmówiono zezwolenia dostępu do lokalizacji</string>
+    <string name="location_text">Szerokość geograficzna: %1$.4f   Długość geograficzna: %2$.4f   Czas: %3$tr</string>
+    <string name="address_text">Adres: %1$s   Godzina: %2$tr</string>
+    <string name="no_location">Brak lokalizacji"</string>
+    <string name="service_not_abailable">Serwis niedostępny"</string>
+    <string name="no_address_found">Nie znaleziono adresu</string>
+</resources>
